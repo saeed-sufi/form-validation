@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Form Validation</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">Branding</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Agency</a></li>
+          <li class="form__open-btn"><a href="#">Request</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div>
+      <h2>Let's create the look and feel for your future business</h2>
+      <p>With an idea and clarity throughout digital communication</p>
+    </div>
+  </main>
+  <div >
+    <form action="" method="POST" id="form" class="form" autocomplete="off">
+
+      <button type="button">
+        <span>×</span>
+      </button>
+
+      <div class="form-control">
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="phone">Phone</label>
+        <input  type="tel" id="phone" placeholder="Enter your phone">
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="task">Task</label>
+        <textarea type="text" id="task" placeholder="Example Text" rows='5'></textarea>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <span class="label">Budget</span>      
+          <div>
+            <input type="radio" id="range1" name="range" value="range1">
+            <label for="range1">$6k-$10k</label>
+          </div>
+          <div>
+            <input type="radio" id="range2" name="range" value="range2">
+            <label for="range2">$10k-$20k</label>
+          </div>
+          <div>
+            <input type="radio" id="range3" name="range" value="range3">
+            <label for="range3">over $20k</label>
+          </div>
+        </ul>
+      </div>
+
+      <div class="form-control">
+        <label for="gettoknow">How did you find out about us?</label>
+        <select id="gettoknow">
+          <option value="">Select one...</option>
+          <option value="behance">Behance</option>
+          <option value="webflow">Webflow</option>
+          <option value="clutch">Clutch</option>
+          <option value="facebook">Facebook</option>
+          <option value="recommendation">Recommendation</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
