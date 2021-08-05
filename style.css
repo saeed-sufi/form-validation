@@ -25,9 +25,9 @@ ul {
 }
 
 ul li {
- list-style: none;
- position: relative;
- margin-right: 2rem;
+  list-style: none;
+  position: relative;
+  margin-right: 2rem;
 }
 
 ul li::after {
@@ -46,7 +46,6 @@ ul li:hover::after {
   width: 100%;
 }
 
-
 .form {
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
   padding: 2rem 1rem;
@@ -62,7 +61,7 @@ ul li:hover::after {
 }
 
 .form-control {
-  margin-bottom: .8rem;
+  margin-bottom: 0.8rem;
 }
 
 .form-control input[type="text"],
@@ -79,12 +78,27 @@ ul li:hover::after {
   visibility: hidden;
 }
 
-.form-button{
-  background-color:rgb(15, 247, 138);
+.form-button {
+  background-color: rgb(15, 247, 138);
   width: 100%;
   height: 30px;
   border: none;
   border-radius: 0.5em;
+}
+
+.form-control.success input,
+.form-control.success textarea {
+  border: 2px solid #2ecc71;
+}
+
+.form-control.error input,
+.form-control.error textarea {
+  border: 2px solid #e74c3c;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
 }
 
 .modal {
@@ -96,13 +110,13 @@ ul li:hover::after {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 #form {
-  background-image: linear-gradient(direction,rgb(175, 187, 255),white );
+  background-image: linear-gradient(direction, rgb(175, 187, 255), white);
   padding: 20px;
   border: 1px solid rgb(0, 0, 0);
 }
