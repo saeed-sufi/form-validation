@@ -28,6 +28,8 @@ form.addEventListener("submit", (e) => {
   else{
     const v = document.getElementById("name").parentElement;
     v.classList.remove("error");
+    const small = document.getElementById("name").nextElementSibling;
+    small.innerHTML="";
   }
   if (document.getElementById("phone").value.trim()=='') {
     const v = document.getElementById("phone").parentElement;
@@ -38,6 +40,8 @@ form.addEventListener("submit", (e) => {
   else{
     const v = document.getElementById("phone").parentElement;
     v.classList.remove("error");
+    const small = document.getElementById("phone").nextElementSibling;
+    small.innerHTML="";
   }
   if (document.getElementById("email").value.trim()=='') {
     const v = document.getElementById("email").parentElement;
@@ -48,5 +52,7 @@ form.addEventListener("submit", (e) => {
   else{
     const v = document.getElementById("email").parentElement;
     v.classList.remove("error");
+    const small = document.getElementById("email").nextElementSibling;
+    small.innerHTML="";
   }
 })
