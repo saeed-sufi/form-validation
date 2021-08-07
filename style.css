@@ -101,7 +101,8 @@ ul li:hover::after {
 }
 
 .radio-toolbar label:hover {
-  background-color: #dfd;
+  background-color: whitesmoke;
+  color: steelblue;
 }
 
 .radio-toolbar input[type="radio"]:checked + label {
