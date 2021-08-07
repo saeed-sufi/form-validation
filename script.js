@@ -27,5 +27,6 @@ function limitText(task) {
     console.log (task.value)
     const formControl = task.parentElement 
     formControl.classList.add ("error")
+    document.getElementById("small").innerText = "Test Should Be Less Than 400 Characters"
   }
 }
