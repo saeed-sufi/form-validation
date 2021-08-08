@@ -2,7 +2,6 @@ var modal = document.getElementById("form");
 var btn = document.getElementById("form__open-btn");
 var span = document.getElementsByClassName("close")[0];
 const form = document.querySelector("#form")
-const task = document.querySelector("#task")
 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -18,9 +17,8 @@ window.onclick = function(event) {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault()
-  limitText (task)
-})
 
+<<<<<<< HEAD
 function limitText(task) {
 	if (task.value.length > 400) {
 		task.value = task.value.substring(0, 400);
@@ -31,3 +29,6 @@ function limitText(task) {
     small.innerHTML="Text Should Be less Than 400 Characters";
   }
 }
+=======
+})
+>>>>>>> parent of 74ba9f4 (Update script.js)      
