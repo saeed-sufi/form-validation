@@ -45,3 +45,16 @@ ul li:hover::after {
   height: 2px;
   width: 100%;
 }
+
+.hero {
+  display: flex;
+  height: 100vh;
+  padding: 5rem 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+ h2, p {
+   font-family: sans-serif;
+  text-align: center;
+    font-weight: 400px;
+  }
