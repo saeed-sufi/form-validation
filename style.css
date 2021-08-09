@@ -169,3 +169,15 @@ ul li:hover::after {
   text-decoration: none;
   cursor: pointer;
 }
+.hero {
+  display: flex;
+  height: 100vh;
+  padding: 5rem 2rem;
+  max-width: 400px;
+  margin: 0 auto;
+}
+ h2, p {
+   font-family: sans-serif;
+  text-align: center;
+    font-weight: 400px;
+  }
