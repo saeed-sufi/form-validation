@@ -19,6 +19,36 @@ window.onclick = function(event) {
 form.addEventListener("submit", (e) => {
   e.preventDefault()
   checkEmail(email)
+  if (document.getElementById("name").value.trim() =='' ) {
+    const v = document.getElementById("name").parentElement;
+    v.classList.add("error");
+    const small = document.getElementById("name").nextElementSibling;
+    small.innerHTML="Field required";
+  }
+  else{
+    const v = document.getElementById("name").parentElement;
+    v.classList.remove("error");
+  }
+  if (document.getElementById("phone").value.trim()=='') {
+    const v = document.getElementById("phone").parentElement;
+    v.classList.add("error");
+    const small = document.getElementById("phone").nextElementSibling;
+    small.innerHTML="Field required";
+  }
+  else{
+    const v = document.getElementById("phone").parentElement;
+    v.classList.remove("error");
+  }
+  if (document.getElementById("email").value.trim()=='') {
+    const v = document.getElementById("email").parentElement;
+    v.classList.add("error");
+    const small = document.getElementById("email").nextElementSibling;
+    small.innerHTML="Field required";
+  }
+  else{
+    const v = document.getElementById("email").parentElement;
+    v.classList.remove("error");
+  }
 })
 
 function checkEmail(email) {
