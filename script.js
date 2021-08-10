@@ -69,7 +69,13 @@ form.addEventListener("submit", (e) => {
       formControl.classList.add ("error")
       const small = document.getElementById("task").nextElementSibling;
       small.innerHTML="Text Should Be less Than 400 Characters";
+      
     }
+    else{
+      const v = document.getElementById("task").parentElement;
+      v.classList.remove("error");
+    }
+  
 }
 })
 
@@ -97,3 +103,5 @@ function showSuccess(element) {
   const formControl = element.parentElement
   formControl.className = "form-control success"
 }
+
+
