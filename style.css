@@ -1,6 +1,7 @@
 body {
   padding: 0;
   margin: 0;
+  overflow-y: scroll;
 }
 
 * {
@@ -52,6 +53,7 @@ ul li:hover::after {
 }
 
 .form {
+  overflow-y: scroll;
   box-shadow: 1px 1px 10px navy;
   padding: 2rem 1rem;
   border-radius: 8px;
@@ -64,6 +66,12 @@ ul li:hover::after {
   left: 50%;
   transform: translate(-50%, -50%);
   background: linear-gradient(to top, white, rgb(204, 226, 240));
+}
+
+@media screen and (min-width: 1140px) {
+  .form {
+    overflow-y: hidden;
+  }
 }
 
 .form-control {

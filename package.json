@@ -1,0 +1,22 @@
+{
+  "name": "form-validation-tw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "sass": "node-sass -w styles/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saeed-sufi/form-validation.git"
+  },
+  "author": "Saeed-Sufi <Sufi.geo@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saeed-sufi/form-validation/issues"
+  },
+  "homepage": "https://github.com/saeed-sufi/form-validation#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
