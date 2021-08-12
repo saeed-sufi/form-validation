@@ -9,17 +9,20 @@
   
   
   .close {
-    color: gray;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    background: none;
-    border: none;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: $navy;
-    text-decoration: none;
-    cursor: pointer;
-  }
+	color: $gray;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	background: none;
+	border: none;
+	&:hover {
+		color:$navy;
+		text-decoration: none;
+		cursor: pointer;
+	}
+	&:focus {
+		color: $navy;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
