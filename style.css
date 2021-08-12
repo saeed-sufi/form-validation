@@ -139,8 +139,13 @@ ul li:hover::after {
   max-width: 400px;
   margin: 0 auto;
 }
- h2, p {
-   font-family: sans-serif;
+h2, p {
+  font-family: sans-serif;
   text-align: center;
-    font-weight: 400px;
-  }
+  font-weight: 400px;
+}
+#gettoknow{
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+}
