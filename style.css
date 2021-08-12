@@ -1,4 +1,6 @@
 @import "./styles/layout/_form.scss";
+@import "./styles/components/_btn.scss";
+@import "./styles/components/_radio-btns.scss";
 
 
 
@@ -47,55 +49,6 @@ ul li:hover::after {
 }
 
 
-.radio-toolbar input[type="radio"] {
-  opacity: 0;
-  position: fixed;
-}
-
-.radio-toolbar label {
-    display: inline-block;
-    background-color: steelblue;
-    margin-top: 5px;
-    padding: 10px 13px;
-    border: 2px solid navy;
-    border-radius: 4px;
-    color: whitesmoke;
-}
-
-.radio-toolbar label:hover {
-  background-color: whitesmoke;
-  color: steelblue;
-}
-
-.radio-toolbar input[type="radio"]:checked + label {
-    background-color: whitesmoke;
-    border-color: navy;
-    color: steelblue;
-}
-
-.form-button {
-  background-color: rgb(50, 214, 45);
-  width: 100%;
-  height: 40px;
-  border: none;
-  border-radius: 0.5em;
-  box-shadow: 0px 5px 8px #888888;
-}
-
-.form-control.success input,
-.form-control.success textarea {
-  border: 2px solid #2ecc71;
-}
-
-.form-control.error input,
-.form-control.error textarea {
-  border: 2px solid #e74c3c;
-}
-
-.form-control.error small {
-  visibility: visible;
-  color: #e74c3c;
-}
 
 .modal {
   display: none; /* Hidden by default */
@@ -116,22 +69,8 @@ ul li:hover::after {
   padding: 20px;
   border: 1px solid rgb(0, 0, 0);
 }
-/* The Close Button */
-.close {
-  color: rgb(201, 199, 199);
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  background: none;
-  border: none;
-}
 
-.close:hover,
-.close:focus {
-  color: navy;
-  text-decoration: none;
-  cursor: pointer;
-}
+
 .hero {
   display: flex;
   height: 100vh;
