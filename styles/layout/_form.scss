@@ -1,4 +1,3 @@
-
 .form {
   overflow-y: scroll;
   box-shadow: 1px 1px 10px $navy;
@@ -15,17 +14,12 @@
   background: linear-gradient(to top, white, $blue-sky);
 }
 
-@media screen and (min-width: 1140px) {
-  .form {
-    overflow-y: hidden;
-  }
-}
-
 .form-control {
   margin-bottom: 0.8rem;
 }
-.form-control label
-{color: $navy;}
+.form-control label {
+  color: $navy;
+}
 
 .form-control input[type="text"],
 .form-control input[type="tel"],

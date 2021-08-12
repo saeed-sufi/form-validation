@@ -1,0 +1,14 @@
+
+
+@mixin sm() {
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
+}
+
+@mixin tb() {
+  @media only screen and (min-width: 763px) {
+    @content;
+  }
+}
+
